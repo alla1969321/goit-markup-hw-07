@@ -1844,7 +1844,7 @@ width: 100% ;}
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-mobile428px@2x.jpg);
+      url(../images/people-office-mobile428px.jpg ) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
