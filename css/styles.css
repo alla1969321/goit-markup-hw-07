@@ -176,6 +176,7 @@ img {
   line-height: 0;
     cursor: pointer;
 }
+/*
 .mobile-menu {
   position: fixed;
   z-index: 1000;
@@ -189,7 +190,7 @@ img {
   pointer-events: none;
   transition: opacity 500ms linear;
   overflow: scroll;
-}
+}*/
 
 
 
