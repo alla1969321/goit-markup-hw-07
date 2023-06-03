@@ -15,9 +15,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
-  <body>
+  <body style="overflow: hidden;">
 
-
+ 
 
 
     <!-- header section  -->
@@ -66,16 +66,15 @@
           
              
           <button type="button" class="mobile-menu-open" data-mobile-close>
-            <svg class="mobile-menu-open__icon" width="32" height="22">
+            <svg class="mobile-menu-open-icon" width="32" height="22">
           <use href="./images/icons.svg#burger">
           </use>
           </svg>
-
-          
-          </button>
-          <div class="mobile-menu" data-modal-block>
-            <div class="container mobile-menu__container">
-          <button class="mobile-menu__close-btn" data-mobile-open>
+        </button>
+    
+      <div class="mobile-menu" data-modal-block>
+        <div class="container mobile-menu-container">
+      <button class="mobile-menu-close-btn" data-mobile-open>
           <svg class="mobile-menu__close-icon">
             <use href="./images/icons.svg#icon-close-modal">
             </use>
@@ -744,7 +743,7 @@
 
 
 
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden js-menu-container" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -823,8 +822,9 @@
 
         </form>
       </div>
-    </div>
-    <script src="./js/mobile.js"></script>
+    </div> 
+   
+  <script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
   </body>
 </html>
