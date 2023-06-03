@@ -65,17 +65,17 @@
           <!-- mobile modal menu and button css -->
           
              
-          <button type="button" class="mobile-menu-open" data-mobile-open>
-            <svg class="mobile-menu-open-icon" width="32" height="22">
-          <use href="./images/icons.svg#burger">
+          <button type="button" class="mobile-menu-open" data-mobile-close>
+            <svg class="mobile-menu-open__icon" width="32" height="22">
+          <use href="./images/icons.svg#hamburger">
           </use>
           </svg>
         </button>
     
-      <div class="mobile-menu" data-modal-block>
-        <div class="container mobile-menu-container">
-      <button class="mobile-menu-close-btn" data-mobile-close>
-          <svg class="mobile-menu-close-icon">
+        <div class="mobile-menu" data-modal-block>
+          <div class="container mobile-menu__container">
+        <button class="mobile-menu__close-btn" data-mobile-open>
+        <svg class="mobile-menu__close-icon">
             <use href="./images/icons.svg#icon-close-modal">
             </use>
             </svg>
@@ -738,13 +738,15 @@
 
 
 
-
+   
     <!-- modal is here  -->
 
 
 
     <div class="backdrop is-hidden js-menu-container" data-modal>
       <div class="modal">
+        <script src="./js/mobile.js"></script>
+
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-modal"></use>
@@ -824,7 +826,15 @@
       </div>
     </div> 
    
-  <script src="./js/mobile.js"></script>
+    
+   
+  <script   src="./js/mobile.js"></script>
+    
+
+
 <script src="./js/modal.js"></script>
+
+
+
   </body>
 </html>
