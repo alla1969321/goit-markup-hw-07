@@ -155,7 +155,13 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 
 }
-.mobile-menu-open_icon
+.open-mobile{
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  line-height: 0;
+  cursor: pointer;
+}
 
 .open-mobile-menu-btn {
   margin-left: auto;
@@ -171,7 +177,7 @@ img {
   background-color: transparent;
   border: none;
   padding: 0;
-  height: 22px;
+ /* height: 22px;*/
   margin-left: auto;
   line-height: 0;
     cursor: pointer;
@@ -214,7 +220,7 @@ img {
   transition: opacity 500ms linear, visibility 500ms linear;
 }
 
-.mobile-menu_close-btn {
+.mobile-menu__close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -228,11 +234,12 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
+  opacity:1 ;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
-.mobile-menu.hidden {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
@@ -240,7 +247,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu_container {
+.mobile-menu__container {
   position: relative;
   padding-left: 35px;
   padding-top: 80px;
@@ -250,7 +257,7 @@ img {
   height: 100%;
 }
 
-.mobile-menu_close-icon {
+.mobile-menu__close-icon {
   height: 8px;
   width: 8px;
 }
@@ -296,7 +303,7 @@ flex-direction: column;
   color: var(--Pressed-State-OCEAN);
 }
 
-.mobile-menu-open_icon {
+.mobile-menu-open__icon {
   fill: #2e2f42;
 }
 
