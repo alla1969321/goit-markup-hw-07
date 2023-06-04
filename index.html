@@ -25,7 +25,7 @@
 
     <header class="page-header page-header-mobile">
       <!-- took off main-nav from div class container   -->
-      <div class="container ">   
+      <div class="container page-header-container">   
         <nav class="main-nav">
           <a
             href="./index.html"
@@ -44,6 +44,8 @@
               <a href="./contacts.html" class="menu-link link">Contacts</a>
             </li>
           </ul>
+        </nav>
+        
 
 <div class="contact-container">
       <address class="contacts">
@@ -65,18 +67,18 @@
           <!-- mobile modal menu and button css -->
           
               
-          <button type="button" class="mobile-menu-open js-open-menu" 
+          <button type="button" class="mobile-menu-open  js-open-menu" aria-expanded="false" 
           >
-            <svg class="mobile-menu-open__icon" width="32" height="22">
+            <svg class="mobile-menu-open-icon" width="32" height="22">
           <use href="./images/icons.svg#hamburger">
           </use>
           </svg>
         </button>
     
-        <div class="container mobile-menu js-menu-container">
-          <!-- <div class="container mobile-menu__container"> -->
-        <button class="mobile-menu__close-btn  js-close-menu">
-        <svg class="mobile-menu__close-icon">
+        <div class="container    mobile-menu  js-menu-container">
+         <div class="container  mobile-menu-container"> 
+        <button class="mobile-menu-close-btn  js-close-menu">
+        <svg class="mobile-menu-close-icon">
             <use href="./images/icons.svg#icon-close-modal">
             </use>
             </svg>
@@ -830,13 +832,7 @@
     
    
     <script src="./js/mobile.js"></script>
-  <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-
+  
 
 <script src="./js/modal.js"></script>
 
