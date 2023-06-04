@@ -105,13 +105,6 @@ img {
 
 
 /* header css mobile  */
-@media screen and (max-width: 767px){
-.mobile-menu-open{
-    border: none;
-    background-color: transparent;
-    padding: 0;
-    line-height: 0;} }
-
 
 @media screen and (max-width: 767px) {
 
@@ -189,8 +182,8 @@ img {
   pointer-events: none;
   transition: opacity 500ms linear, visibility 500ms linear;
 }
-@media screen and (max-width: 767px){
-.mobile-menu-close-btn {
+
+.mobile-menu__close-btn {
   position: absolute;
   top: 24px;
   right: 24px;
@@ -208,13 +201,13 @@ img {
 
 }
 
-.mobile-menu.is-open{
+.mobile-menu.hidden {
  opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
 
-.mobile-menu-container {
+.mobile-menu__container {
   position: relative;
   padding-left: 35px;
   padding-top: 80px;
@@ -224,7 +217,7 @@ img {
   height: 100%;
 }
 
-.mobile-menu-close-icon {
+.mobile-menu__close-icon {
   height: 8px;
   width: 8px;
 }
@@ -353,12 +346,7 @@ padding-left: 0;
 
 }
 
-@media screen and (max-width: 767px){
-.page-header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}}
+
 
 
 /* tablet css  */
@@ -1826,21 +1814,21 @@ width: 100%;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-mobile428px.jpg);
+    url(../images/people-office-mobile428px\ .jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@media (min-width: 429px) (max-width: 768px) {
+@media(min-width: 429px) and(max-width: 768px) {
   .overlay {
     background: linear-gradient(
         to right,
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-tablet768px.jpg);
+      url(../images/people-office-tablet768px\ .jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1858,7 +1846,7 @@ width: 100%;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office-mobile428px\ .jpg);
+      url(../images/people-office-mobile428px@2x\ .jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
