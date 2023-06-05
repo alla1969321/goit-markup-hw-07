@@ -23,7 +23,7 @@ body {
   color: var(--Text-SLATE);
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
@@ -193,11 +193,12 @@ img {
   width: 24px;
   height: 24px;
   border-radius: 50%;
- 
+  /*background-color: var(--White-background-WHITE);*/
+  background-color: rgba(231, 233, 252, 1);
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   cursor: pointer;
-  background: #e7e9fc;
+  
 
 }
 
@@ -241,7 +242,6 @@ img {
   /* height: 200px; */
   /* width: 151px; */
   margin-top: 0; 
-  margin-bottom: 48px;
 }
 
 .mobile-link-item {
@@ -249,10 +249,10 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
-color: var(--Dark-NAVY-BLUE);
-display: flex;
+/*color: var(--Dark-NAVY-BLUE);
+/*display: flex;
 row-gap: 40px;
-flex-direction: column;
+flex-direction: column;*/
 }
 
 .mobile-link-item:hover,
@@ -301,7 +301,7 @@ color: var(--Primary-Brand-IRIS)
 .mobile-contact-link {
   font-weight: 500;
   font-size:20px;
-  line-height: 1.2;
+  line-height: 24px;
   letter-spacing: 0.02em;
   color: var(--Text-SLATE);
 }
@@ -468,20 +468,20 @@ padding-left: 0;
 
 
 .contact-info .link {
-  
-  transition: color var(--transition);
   color: #434455;
+  transition: color var(--transition);
+  
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
 
   /* padding-top: 24px;
   padding-bottom: 24px; */
-  /* display: flex; */
+  /* display: flex; 
   row-gap: 4px;
   /* margin-bottom: 12px; */
 }
@@ -727,23 +727,26 @@ padding-left: 0;
 
 .hero {
   background-color: var(--Dark-NAVY-BLUE);
+
   text-align: center;
+
   padding-top: 188px;
   padding-bottom: 188px;
-
-  margin: auto;
-    padding: 188px 0 188px;
+}
+@media screen and (min-width: 768px){
+.hero {
+    margin: auto;
+    padding: 112px 0 112px;
     text-align: center;
-    max-width: 1440px;
-    height: 600px;
-    
+    max-width: 768px;
+    height: 436px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images//people-office-desktop-1158px.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
-}
-
+    background-size: cover;}}
 
 
 /* section advantages css for mobile tablet and desktop */
@@ -815,9 +818,9 @@ padding-left: 0;
 @media only screen and (max-width: 767px) {
 .description-title {
     /* row-gap: 72px; */
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+   /* align-items: center;*/
+    /*display: flex;*/
+   /*flex-direction: column;*/
 }
 }
 
@@ -841,16 +844,14 @@ padding-left: 0;
 
   letter-spacing: 0.02em;
 }
-
 .description-title:nth-child(4n) {
   margin-right: 0;
 }
 
 .description-title:nth-last-child(-n + 4) {
-  margin-bottom: 0; */
+  margin-bottom: 0;
 }
 
-}
 
 
 @media only screen and (max-width: 1199px){
@@ -864,14 +865,14 @@ padding-left: 0;
 
 .advantages-title {
   color: var(--Dark-NAVY-BLUE);
-
+text-align: center;
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
 
   margin-bottom: 8px;
-  padding-top: 8px;
+  /*padding-top: 8px;*/
 }
 
 @media only screen and (max-width: 767px) {
@@ -882,7 +883,7 @@ padding-left: 0;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    padding-top: 8px;
+   /* padding-top: 8px;*/
 }
 
 .advantages-desctiption {
@@ -901,7 +902,7 @@ padding-left: 0;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    padding-top: 8px;
+    /*padding-top: 8px;*/
 }
 
 
@@ -1518,8 +1519,8 @@ width: 100%;
 }
 
 .footer-form-subscribe {
-  display: flex;
-  align-items: center;
+ /* display: flex;
+  align-items: center;*/
 }
 
 @media only screen and (max-width: 767px) {
@@ -1650,12 +1651,12 @@ width: 100%;
 .footer-field {
     width: 287px;
     height: 40px;
-    padding: 15px 16px;
+    padding: 7px 7px;
     font-size: 16px;
     background-color: transparent;
-    border: 1px solid var(--Text-SLATE);
+    border: 1px solid #ffffff;
     border-radius: 4px;
-    color: var(--White-background-WHITE);
+    color: #ffffff;
     transition: border-color var(--transition);
 }
 }
@@ -1664,7 +1665,7 @@ width: 100%;
 .footer-field {
     width: 264px;
     height: 40px;
-    padding: 15px 16px;
+    padding: 7px 7px;
     font-size: 16px;
     background-color: transparent;
     border: 1px solid var(--Text-SLATE);
@@ -1825,14 +1826,14 @@ width: 100%;
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office-mobile428px.jpg);
+    url(../images/people-office-mobile428px\ .jpg);
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@media (min-width: 429px) (max-width: 768px) {
+@media(min-width: 429px) and(max-width: 768px) {
   .overlay {
     background: linear-gradient(
         to right,
@@ -1857,13 +1858,13 @@ width: 100%;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/bg-hero@2x.jpg);
+      url(../images/people-office-mobile428px@2x\ .jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     max-width: 428px;
-    max-height: 432px;
+    /*max-height: 432px;*/
   }
 }
 
@@ -1875,7 +1876,7 @@ width: 100%;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bgm@2x.jpg);
+      url(../images/people-office-mobile428px@2x\ .jpg);
     max-width: 768px;
     max-height: 436px;
     background-position: center;
@@ -1894,7 +1895,7 @@ width: 100%;
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/Dark-bgt@2x.jpg);
+      url(../images/people-office-tablet768px@2x\ .jpg);
     max-width: 768px;
     max-height: 436px;
     background-position: center;
@@ -1942,14 +1943,14 @@ width: 100%;
 @media only screen and (max-width: 767px) {
   .overlay {
     padding: 0;
-    height: 432px;
+    /*height: 432px;*/
   }
 }
 
 @media only screen and (min-width: 767px) {
   .overlay {
-    display: flex;
-    align-items: center;
+   /* display: flex;*/
+   /* align-items: center;*/
   }
 }
 
@@ -1963,8 +1964,8 @@ width: 100%;
 
 @media only screen and (max-width: 767px) {
   .hero-title {
-    padding: 112px 0;
-    height: 80px;
+    /*padding: 112px 0;*/
+    /*height: 80px;*/
     width: 320px;
     font-size: 36px;
     line-height: 40px;
@@ -2036,7 +2037,7 @@ width: 100%;
 
 @media only screen and (max-width: 1199px) {
   .customers-list {
-    gap: 72px 24px; 
+    gap: 72px 16px; 
     flex-wrap: wrap;
     justify-content: center;
 
@@ -2057,8 +2058,8 @@ width: 100%;
   /* width: calc((100% - 120px) / 6);
   height: 88px; */
   height: 88px;
-  max-width: 168px;
-  width: 100%;
+  /*max-width: 168px;*/
+  /*width: 100%;*/
   flex-basis: calc((100% - 16px) / 2);
 }
 
@@ -2111,6 +2112,7 @@ width: 100%;
 @media only screen and (max-width: 767px) {
   .footer-container {
     /* display: flex; */
+   
     align-items: center;
     flex-wrap: wrap;
     row-gap: 72px;
@@ -2125,7 +2127,7 @@ width: 100%;
     row-gap: 72px;
     display: flex;
     max-width: 768px;
-    width: 100%;
+    width: 584px;
     padding: 0 0 0 108px;
   }
 }
@@ -2259,7 +2261,7 @@ width: 100%;
   
   justify-content: center;
   gap: 16px;
-  margin-top: 8px; 
+  /*margin-top: 8px; */
 }
 
 
@@ -2292,7 +2294,7 @@ width: 100%;
   background: var(--modal-background-DIARY);
   border-radius: 4px;
    width: 408px;
-  height: 584px;
+  /*height: 584px;*/
   padding: 24px;
   padding-top: 72px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2301,9 +2303,9 @@ width: 100%;
 
    width: 95%;
    max-width: 392px;
-   height: 95%;
-   max-height: 584px;
-   overflow: scroll;
+   /*height: 95%;*/
+   /*max-height: 584px;*/
+   /*overflow: scroll;*/
 }
 }
 
@@ -2502,6 +2504,7 @@ width: 100%;
   display: block;
   content: '';
   background-image: url(../images/checkbox-default.svg);
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   cursor: pointer;
