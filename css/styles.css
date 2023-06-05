@@ -23,7 +23,7 @@ body {
   color: var(--Text-SLATE);
   font-family: Roboto, sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.02em;
 }
 
@@ -468,20 +468,20 @@ padding-left: 0;
 
 
 .contact-info .link {
-  color: var(--Dark-NAVY-BLUE);
+  color: #434455;
   transition: color var(--transition);
   
 
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.5;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   font-style: normal;
 
   /* padding-top: 24px;
   padding-bottom: 24px; */
-  /* display: flex; */
+  /* display: flex; 
   row-gap: 4px;
   /* margin-bottom: 12px; */
 }
@@ -733,7 +733,20 @@ padding-left: 0;
   padding-top: 188px;
   padding-bottom: 188px;
 }
-
+@media screen and (min-width: 768px){
+.hero {
+    margin: auto;
+    padding: 112px 0 112px;
+    text-align: center;
+    max-width: 768px;
+    height: 436px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #2e2f42;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/tablet-images/@1x/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
 
 
 /* section advantages css for mobile tablet and desktop */
@@ -861,7 +874,7 @@ padding-left: 0;
   letter-spacing: 0.02em;
 
   margin-bottom: 8px;
-  padding-top: 8px;
+  /*padding-top: 8px;*/
 }
 
 @media only screen and (max-width: 767px) {
@@ -872,7 +885,7 @@ padding-left: 0;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    padding-top: 8px;
+   /* padding-top: 8px;*/
 }
 
 .advantages-desctiption {
@@ -1508,8 +1521,8 @@ width: 100%;
 }
 
 .footer-form-subscribe {
-  display: flex;
-  align-items: center;
+ /* display: flex;
+  align-items: center;*/
 }
 
 @media only screen and (max-width: 767px) {
@@ -1643,9 +1656,9 @@ width: 100%;
     padding: 15px 16px;
     font-size: 16px;
     background-color: transparent;
-    border: 1px solid var(--Text-SLATE);
+    border: 1px solid #ffffff;
     border-radius: 4px;
-    color: var(--White-background-WHITE);
+    color: #ffffff;
     transition: border-color var(--transition);
 }
 }
@@ -1654,7 +1667,7 @@ width: 100%;
 .footer-field {
     width: 264px;
     height: 40px;
-    padding: 15px 16px;
+    padding: 7px 7px;
     font-size: 16px;
     background-color: transparent;
     border: 1px solid var(--Text-SLATE);
@@ -1938,15 +1951,15 @@ width: 100%;
 
 @media only screen and (min-width: 767px) {
   .overlay {
-    display: flex;
-    align-items: center;
+   /* display: flex;*/
+   /* align-items: center;*/
   }
 }
 
 @media only screen and (min-width: 1199px) {
   .overlay {
     max-width: 1440px;
-    max-height: 600px;
+   /* max-height: 600px;*/
     padding: 188px 0 188px 0;
   }
 }
@@ -2249,7 +2262,7 @@ width: 100%;
   
   justify-content: center;
   gap: 16px;
-  margin-top: 8px; 
+  /*margin-top: 8px; */
 }
 
 
