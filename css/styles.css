@@ -250,7 +250,7 @@ font-size: 36px;
 line-height: 1.11;
 letter-spacing: 0.02em;
 color: var(--Dark-NAVY-BLUE);
-display: flex;
+/*display: flex;*/
 row-gap: 40px;
 flex-direction: column;
 }
@@ -273,11 +273,13 @@ flex-direction: column;
 .mobile-contact-info {
 flex-direction: column;
 gap: 40px;
-margin-bottom: 48px;
+/*margin-bottom: 48px;*/
 /* margin-top: 284px; */
 }
 
 .mobile-contact-tel {
+  font-family: Roboto, sans-serif; 
+  font-style: normal;
 font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
@@ -482,7 +484,7 @@ padding-left: 0;
   /* padding-top: 24px;
   padding-bottom: 24px; */
   /* display: flex; */
-  row-gap: 4px;
+ /* row-gap: 4px;*/
   /* margin-bottom: 12px; */
 }
 
@@ -725,14 +727,13 @@ padding-left: 0;
   max-width: 496px;
 }
 
-.hero {
+.hero{
   background-color: var(--Dark-NAVY-BLUE);
   text-align: center;
-  padding-top: 188px;
-  padding-bottom: 188px;
-
+  padding-top: 112px;
+  padding-bottom: 112px;
   margin: auto;
-    padding: 188px 0 188px;
+    /*padding: 188px 0 188px;*/
     text-align: center;
     max-width: 1440px;
     height: 600px;
@@ -816,7 +817,7 @@ padding-left: 0;
 .description-title {
     /* row-gap: 72px; */
     align-items: center;
-    display: flex;
+    /*display: flex;*/
     flex-direction: column;
 }
 }
@@ -869,7 +870,7 @@ padding-left: 0;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
-
+  text-align: center;
   margin-bottom: 8px;
  /* padding-top: 8px;*/
 }
@@ -879,9 +880,9 @@ padding-left: 0;
     color: var(--Dark-NAVY-BLUE);
     font-size: 36px;
     font-weight: 700;
-    line-height: 1.2;
+   /* line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
+    margin-bottom: 8px;*/
     padding-top: 8px;
 }
 
@@ -894,14 +895,15 @@ padding-left: 0;
 
 
 @media only screen and (max-width: 1199px) {
- .advantages-title {
+ .advantages-title {/*
     color: var(--Dark-NAVY-BLUE);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-    padding-top: 8px;
+    /*padding-top: 8px;*/
+    /*text-align: center;*/
 }
 
 
@@ -1118,14 +1120,16 @@ padding-left: 0;
   border-radius: 4px;
   border: 1px solid transparent;
   border: none;
-  width: 169px;
+ 
   height: 56px;
   min-width: 169px;
 
   padding: 16px 32px;
   margin: auto;
-  margin-top: 48px;
-
+ /* margin-top: 48px;*/
+ margin-left: auto;
+ margin-right: auto;
+ 
   text-align: center;
   line-height:  1.5;
   font-weight: 500;
@@ -1616,9 +1620,9 @@ width: 100%;
 
 @media only screen and (max-width: 428px) {
 .footer-field {
-    width: 264px;
+    width: 100%;
     height: 40px;
-    padding: 15px 16px;
+    padding: 7px 7px;
     font-size: 16px;
     background-color: transparent;
     border: 1px solid var(--White-background-WHITE);
@@ -1632,9 +1636,9 @@ width: 100%;
 
 @media only screen and (max-width: 767px) {
 .footer-field {
-    width: 264px;
+    width: 100%;
     height: 40px;
-    padding: 15px 16px;
+    padding: 7px 7px;
     font-size: 16px;
     background-color: transparent;
     border: 1px solid#ffff;
@@ -1650,7 +1654,7 @@ width: 100%;
 .footer-field {
     width: 287px;
     height: 40px;
-    padding: 15px 16px;
+    padding: 7px 7px;
     font-size: 16px;
     background-color: transparent;
     border: 1px solid #ffffff;
@@ -1878,7 +1882,7 @@ width: 100%;
       ),
       url(../images/Dark-bgm@2x.jpg);
     max-width: 768px;
-    max-height: 436px;
+    /*max-height: 436px;*/
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1943,7 +1947,7 @@ width: 100%;
 @media only screen and (max-width: 767px) {
   .overlay {
     padding: 0;
-    height: 432px;
+    /*height: 432px;*/
   }
 }
 
@@ -1964,8 +1968,8 @@ width: 100%;
 
 @media only screen and (max-width: 767px) {
   .hero-title {
-    padding: 112px 0;
-    height: 80px;
+    /*padding: 112px 0;*/
+    /*height: 80px;*/
     width: 320px;
     font-size: 36px;
     line-height: 40px;
@@ -2037,7 +2041,7 @@ width: 100%;
 
 @media only screen and (max-width: 1199px) {
   .customers-list {
-    gap: 72px 24px; 
+    gap: 72px 16px; 
     flex-wrap: wrap;
     justify-content: center;
 
@@ -2058,8 +2062,8 @@ width: 100%;
   /* width: calc((100% - 120px) / 6);
   height: 88px; */
   height: 88px;
-  max-width: 168px;
-  width: 100%;
+  /*max-width: 168px;
+  width: 100%;*/
   flex-basis: calc((100% - 16px) / 2);
 }
 
@@ -2116,6 +2120,7 @@ width: 100%;
     flex-wrap: wrap;
     row-gap: 72px;
     justify-content: center;
+    width: 584px;
   }
 }
 
@@ -2292,20 +2297,19 @@ width: 100%;
   transform: translate(-50%, -50%);
   background: var(--modal-background-DIARY);
   border-radius: 4px;
-   width: 408px;
-  height: 584px;
+ /* width: 408px;
+  height: 584px;*/
   padding: 24px;
   padding-top: 72px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 
 
-   width: 95%;
+   /*width: 95%;
    max-width: 392px;
    height: 95%;
-   max-height: 584px;
+   max-height: 584px;*/
    overflow: scroll;
-}
 }
 
 @media only screen and (max-width: 767px) {
@@ -2316,8 +2320,8 @@ width: 100%;
   transform: translate(-50%, -50%);
   background: var(--modal-background-DIARY);
   border-radius: 4px;
-   width: 408px;
-  height: 584px;
+  /* width: 408px;
+  height: 584px;*/
   padding: 24px;
   padding-top: 72px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -2325,9 +2329,9 @@ width: 100%;
 
    width: 95%;
    max-width: 392px;
-   height: 95%;
-   max-height: 584px;
-   overflow: scroll;
+   /*height: 95%;*/
+   /*max-height: 584px;*/
+   /*overflow: scroll;*/
 }
 }
 
@@ -2502,6 +2506,7 @@ width: 100%;
  .modal-form-check-desc::before {
   display: block;
   content: '';
+  flex-shrink: 0;
   background-image: url(../images/checkbox-default.svg);
   width: 16px;
   height: 16px;
