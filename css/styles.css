@@ -57,6 +57,13 @@ ol{
   text-decoration: none;
 }
 
+
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;}
+
+
 img {
   display: block;
   max-width: 100%;
@@ -77,7 +84,7 @@ img {
   overflow: hidden;
 }
 .page-header-container {
-  display: flex;
+ display: flex;
   align-items: center;
   justify-content: space-between;
 
@@ -85,7 +92,7 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  max-width: 428px;
+  /*max-width: 428px;*/
   /*width: 100%;*/
   padding-left: 15px;
   padding-right: 15px;
@@ -107,7 +114,8 @@ img {
 
 @media only screen and (min-width: 767px) {
   .container {
-    width: 584px;
+    width: 767px;
+    display:block
   }
 }
 
@@ -459,6 +467,31 @@ padding-left: 0;
   left: 0;
 }
 
+
+
+.contact-info .link:hover,
+.contact-info .link:focus {
+  color: var(--Pressed-State-OCEAN);
+}
+.contact-link  {
+  color: var(--Dark-NAVY-BLUE);
+  transition: color var(--transition);
+  
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  display: block;
+}
+
+
+
 .menu-link {
   position: relative;
   display: block;
@@ -487,9 +520,9 @@ padding-left: 0;
   
   transition: color var(--transition);
   color: #434455;
-
+  padding: 24px 0;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -507,6 +540,7 @@ padding-left: 0;
 .contacts {
   font-style: normal;
   margin-left: auto;
+ /*text-align: center;*/
 }
 
 .contact-info:last-child {
@@ -522,7 +556,7 @@ padding-left: 0;
 .contact-info {
   flex-direction: column;
   display: flex;
-  gap: 12px;
+  gap: 40px;
  }
 
 
@@ -566,8 +600,13 @@ padding-left: 0;
 
 }
 
- 
-
+@media screen and (min-width: 1158px) {
+  .contact-info {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+   /*gap: 40px;*/}
+  }
 
 
 
@@ -689,7 +728,7 @@ padding-left: 0;
 }
 .contact-info {
   display: flex;
-  gap: 40px;
+  /*gap: 40px;*/
 }
 
 
@@ -1733,7 +1772,7 @@ width: 100%;
 
     margin: 0 auto;
 
-    display: block;
+    display: flex;
 }
 
 
