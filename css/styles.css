@@ -295,7 +295,7 @@ flex-direction: column;
 .mobile-contact-info {
 flex-direction: column;
 gap: 40px;
-/*margin-bottom: 48px;*/
+margin-bottom: 40px;
 /* margin-top: 284px; */
 }
 
