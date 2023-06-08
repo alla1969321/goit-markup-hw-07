@@ -1549,8 +1549,8 @@ width: 100%;
 }
 
 .footer-form-subscribe {
-  /*display: flex;*/
-  align-items: center;
+  display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 767px) {
@@ -2164,7 +2164,7 @@ width: 100%;
     flex-wrap: wrap;
     row-gap: 72px;
     justify-content: center;
-    min-width: 584px;
+    /*min-width: 584px;*/
   }
 }
 
