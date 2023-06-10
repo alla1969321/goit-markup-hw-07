@@ -1888,16 +1888,23 @@ width: 100%;
 }
 
 .footer-field::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
    color: white;
 }
 
 
  
-@media only screen and (max-width: 428px) {
+/*@media only screen and (max-width: 428px) {*/
 
 .footer-field::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  /*line-height: 2;*/
   color: white; 
 }
+
 }
 
 
