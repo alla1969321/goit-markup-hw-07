@@ -108,7 +108,7 @@ img {
 
 @media screen and (max-width: 428px) {
   .container {
-    max-width: 428px;
+    /*max-width: 428px;*/
     width: 100%;
   }
 }
@@ -120,10 +120,10 @@ img {
   }
 }
 
-@media only screen and (min-width: 1158px) {
+@media only screen and (min-width: 1200px) {
   .container {
-    padding-top: 15px;
-    padding-right: 15px;
+   /* padding-top: 15px;
+    padding-right: 15px;*/
 
     width: 1158px;
   }
