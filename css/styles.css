@@ -2305,13 +2305,6 @@ width: calc((100% - 120px) / 6);
 
 /* footer css  */
 
-@media only screen and (min-width: 1158px) {
-  .footer-container {
-   display: flex; 
-    align-items: baseline;
-    /*background-color: var(--Dark-NAVY-BLUE);*/
-     }
-}
 
 @media only screen and (max-width: 428px) {
   .footer-container {
@@ -2341,6 +2334,13 @@ width: calc((100% - 120px) / 6);
     padding-left: 15px;}
   }
 
+  @media only screen and (min-width: 1199px) {
+    .footer-container {
+     display: flex; 
+      align-items: baseline;
+      /*background-color: var(--Dark-NAVY-BLUE);*/
+       }
+  }
 @media only screen and (min-width: 768px) and (max-width: 1158px) {
   .footer-container {
     flex-wrap: wrap;
@@ -2358,7 +2358,7 @@ width: calc((100% - 120px) / 6);
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1199px) {
   .footer-container {
     flex-wrap: nowrap;
     flex-direction: row;
