@@ -1619,7 +1619,7 @@ text-align: center;
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
 
 }
 
@@ -1663,11 +1663,11 @@ width: 100%;
 }
 }*/
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1158px) {
 .footer-container-three {
   margin-left: 80px;
 }
-}
+}}
 
 .footer-form-subscribe {
   /*display: flex;*/
@@ -1682,6 +1682,7 @@ width: 100%;
     letter-spacing: 0.02em;
     color: var(--White-background-WHITE);
 }
+
 @media only screen and (min-width: 1158px){
 .footer-form-subscribe {
  
@@ -1906,7 +1907,7 @@ width: 100%;
       margin-right: auto;
       }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 767px) {
   .footer-social-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -1914,12 +1915,11 @@ width: 100%;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  text-align: center;
-}
-}
+  text-align: left;
+}}
 
 
-@media only screen and (max-width: 428px) {
+
 .footer-social-text {
    margin-bottom:16px;
   font-weight: 500;
@@ -1930,7 +1930,7 @@ width: 100%;
   text-align: center;
   
 }
-}
+
 /*
 .footer-container-two{
   margin-bottom:72px;}
@@ -1957,7 +1957,7 @@ width: 100%;
 
 
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
 .footer-social-text {
   margin-bottom: 16px;
   font-weight: 500;
@@ -2259,13 +2259,13 @@ width: 100%;
     flex-wrap: wrap;
     justify-content: center;
     row-gap: 72px;
-  }}
+  }
 
 @
   .customers-list {
     align-items: center;
   }
-}
+
   
 .customers-list {
   display: flex;
@@ -2274,7 +2274,7 @@ width: 100%;
   row-gap: 72px;
   column-gap: 16px;
 }
-  }
+  
 
 
 @media screen and(min-width: 768px){
@@ -2458,7 +2458,7 @@ width: calc((100% - 120px) / 6);
 }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
  .logo-down {
   color: var(--Dark-NAVY-BLUE);
 
