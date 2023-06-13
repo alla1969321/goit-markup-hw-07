@@ -2285,6 +2285,10 @@ width: 100%;
   column-gap: 16px;
 }
 
+  @media screen and (min-width: 428){
+    .customers-list{
+    align-items: center;
+  }}
 
 @media only screen and (min-width: 768px) {
   .customers-list {
@@ -2302,15 +2306,7 @@ align-items: center;
       gap: 72px 24px; 
   column-gap: 24px;}}
 
-  @media only screen and (max-width: 1158px) {
-    .customers-list {
-      
-       max-width: 100%
-      /* margin: 0 auto; */
-  
-    }
-  }
-
+ 
 
 @media screen and (min-width: 1158px){  
   .customers-list {
