@@ -113,7 +113,7 @@ img {
 @media only screen and (min-width: 768px) {
   .container {
    /* width: 768px;*/
-   display: flex;
+  /* display: flex;*/
 }}
 
 @media only screen and (min-width: 1158px) {
